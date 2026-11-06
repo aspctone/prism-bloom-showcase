@@ -1,0 +1,43 @@
+name: Closed beta interest
+description: Register interest in evaluating Prism Bloom on your own Unity Canvas.
+title: "[Beta] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public issue for an expression of interest. Please keep contact details, logs, private screenshots and project files out of it. The kit is shared separately after an individual invitation.
+  - type: textarea
+    id: reward_flow
+    attributes:
+      label: What reward flow would you test?
+      description: A short, public-safe description of the Unity UI you would use is enough.
+    validations:
+      required: true
+  - type: input
+    id: test_setup
+    attributes:
+      label: Unity Editor, OS, and uGUI version
+      description: "Use the versions available in a separate test project. Enter Not checked yet for anything you have not verified."
+      placeholder: "Example: Unity 6000.3.28f1, Windows x64, uGUI 2.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: How did you find Prism Bloom? (optional)
+      options:
+        - Unity Discussions
+        - r/Unity3D
+        - GameDev.net
+        - itch.io
+        - Direct invitation
+        - GitHub search or a referral
+        - Other
+        - Prefer not to say
+  - type: checkboxes
+    id: opt_in
+    attributes:
+      label: Beta interest
+      options:
+        - label: I am interested in an invitation to the free, private beta.
+          required: true

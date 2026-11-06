@@ -1,0 +1,26 @@
+name: Product or compatibility question
+description: Ask about Prism Bloom, the preview, or the verified Unity setup.
+title: "[Question] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Questions are public. Describe the Unity setup without sharing contact information, private files, logs, or screenshots from unreleased work.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - Product and demo
+        - Unity compatibility
+        - Canvas or Sprite integration
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to know?
+      description: Include the exact Unity version and UI system if they are relevant to the question.
+    validations:
+      required: true
